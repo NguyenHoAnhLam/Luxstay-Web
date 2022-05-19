@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,136 +20,182 @@
     <div class="wrapper">
         <div class="wrapper__header">
             <div class="grid wide">
-                <header class="header">
-                    <div class="header-left">
-                        <div class="header__logo">
-                            <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 50px; height: 50px;">
-                                <path
-                                    pid="0"
-                                    d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
-                                ></path>
-                            </svg>
-                        </div>
-                        <div class="header__booking">
-                            <div class="booking-search">
-                                <span class="booking-search-icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </span>
-                                <input type="text" class="booking-search-input" placeholder="Search">
+                <!-- <div class="row"> -->
+                    <header class="header">
+                        <div class="header-left">
+                            <div class="header__logo">
+                                <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 50px; height: 50px;">
+                                    <path
+                                        pid="0"
+                                        d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+                                    ></path>
+                                </svg>
                             </div>
-                            <div class="booking-filed date-picker">
-                                <span class="booking-filed-icon">
-                                    <i class="fa-solid fa-calendar-day"></i>   
-                                 </span>
-                                 <button class="booking-filed-btn">
-                                     Dates
-                                 </button>
-                            </div>
-                            <div class="booking-filed booking-guest">
-                                <span class="booking-filed-icon">
-                                    <i class="fa-solid fa-user"></i>                         
-                                </span>
-                                 <button class="booking-filed-btn">
-                                     Guest
-                                 </button>
-                                 <div class="guest-popover">
-                                     <div class="guest-selcect">
-                                         <p class="guest-selcect-tilte">Adults</p>
-                                        <div class="guest-selcect-number">
-                                            <span class="decrease-qty"><i class="fa-solid fa-minus"></i></span>
-                                            <input type="text" class="input-qty" placeholder="0">
-                                            <span class="increase-qty"><i class="fa-solid fa-plus"></i></span>
+                            <div class="header__booking">
+                                <div class="booking-search">
+                                    <span class="booking-search-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                    <input type="text" class="booking-search-input" placeholder="Search">
+                                </div>
+                                <div class="booking-filed date-picker hide-on-mobile">
+                                    <span class="booking-filed-icon">
+                                        <i class="fa-solid fa-calendar-day"></i>   
+                                     </span>
+                                     <button class="booking-filed-btn">
+                                         Dates
+                                     </button>
+                                </div>
+                                <div class="booking-filed booking-guest hide-on-mobile">
+                                    <span class="booking-filed-icon">
+                                        <i class="fa-solid fa-user"></i>                         
+                                    </span>
+                                     <button class="booking-filed-btn">
+                                         Guest
+                                     </button>
+                                     <div class="guest-popover">
+                                         <div class="guest-selcect">
+                                             <p class="guest-selcect-tilte">Adults</p>
+                                            <div class="guest-selcect-number">
+                                                <span class="decrease-qty"><i class="fa-solid fa-minus"></i></span>
+                                                <input type="text" class="input-qty" placeholder="0">
+                                                <span class="increase-qty"><i class="fa-solid fa-plus"></i></span>
+                                            </div>
+                                         </div>
+                                         <div class="guest-selcect">
+                                            <p class="guest-selcect-tilte">Children</p>
+                                           <div class="guest-selcect-number">
+                                               <span class="decrease-qty"><i class="fa-solid fa-minus"></i></span>
+                                               <input type="text" class="input-qty" placeholder="0">
+                                               <span class="increase-qty"><i class="fa-solid fa-plus"></i></span>
+                                           </div>
+                                        </div>
+                                        <div class="guest-selcect">
+                                            <p class="guest-selcect-tilte">Infants</p>
+                                           <div class="guest-selcect-number">
+                                               <span class="decrease-qty"><i class="fa-solid fa-minus"></i></span>
+                                               <input type="text" class="input-qty" placeholder="0">
+                                               <span class="increase-qty"><i class="fa-solid fa-plus"></i></span>
+                                           </div>
+                                        </div>
+                                        <div class="guest-selcect-bottom">
+                                            <button class="guest-selcect-clear">Clear</button>
+                                            <button class="guest-selcect-apply">Apply</button>
                                         </div>
                                      </div>
-                                     <div class="guest-selcect">
-                                        <p class="guest-selcect-tilte">Children</p>
-                                       <div class="guest-selcect-number">
-                                           <span class="decrease-qty"><i class="fa-solid fa-minus"></i></span>
-                                           <input type="text" class="input-qty" placeholder="0">
-                                           <span class="increase-qty"><i class="fa-solid fa-plus"></i></span>
-                                       </div>
-                                    </div>
-                                    <div class="guest-selcect">
-                                        <p class="guest-selcect-tilte">Infants</p>
-                                       <div class="guest-selcect-number">
-                                           <span class="decrease-qty"><i class="fa-solid fa-minus"></i></span>
-                                           <input type="text" class="input-qty" placeholder="0">
-                                           <span class="increase-qty"><i class="fa-solid fa-plus"></i></span>
-                                       </div>
-                                    </div>
-                                    <div class="guest-selcect-bottom">
-                                        <button class="guest-selcect-clear">Clear</button>
-                                        <button class="guest-selcect-apply">Apply</button>
-                                    </div>
-                                 </div>
-                            </div>
-                            <button class="search-btn">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
+                                </div>
+                                <button class="search-btn hide-on-mobile">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>       
+                                         
                         </div>
-                    </div>
-                    <div class="header__menu">
-                        <ul class="menu-list">
-                            <li class="menu-item">
-                                <a href="#" class="menu-item-link">Guide</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-item-link active">Host</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-item-link">Sign up</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-item-link">Sign in</a>
-                            </li>
-                            <li class="menu-item">
-                                <div class="language">
-                                    <img src="./assets/img/header/en.svg" alt="" srcset="">
+                        <div class="header__menu hide-on-mobile-tablet">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-item-link">Guide</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-item-link active">Host</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-item-link">Sign up</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-item-link">Sign in</a>
+                                </li>
+                                <li class="menu-item">
+                                    <div class="language">
+                                        <img src="./assets/img/header/en.svg" alt="" srcset="">
+                                        <span class="language-title">VND</span>
+                                        <span class="language-dropdown">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                        <div class="popover-language">
+                                            <div class="popover-language-select">
+                                                <div class="language-select-item">
+                                                    <img src="./assets/img/header/vi.svg" alt="" class="language-select-item-img">
+                                                    <span class="language-select-item-title">Tiếng Việt</span>
+                                                </div>
+                                                <div class="language-select-item">
+                                                    <img src="./assets/img/header/en.svg" alt="" class="language-select-item-img">
+                                                    <span class="language-select-item-title">English</span>
+                                                    <span class="language-select-item-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="language-select-item">
+                                                    <img src="./assets/img/header/ko.svg" alt="" class="language-select-item-img">
+                                                    <span class="language-select-item-title">Korean</span>
+                                                </div>
+                                            </div>
+                                            <div class="language-select-money">
+                                                <div class="language-select-money-item">
+                                                    <b class="language-select-money-unit">VND</b>
+                                                    <span class="language-select-money-title">
+                                                        Việt Nam Đồng
+                                                    </span>
+                                                    <span class="language-select-item-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="language-select-money-item">
+                                                    <b class="language-select-money-unit">USD</b>
+                                                    <span class="language-select-money-title">
+                                                        United States Dollar
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                               
+                                </li>
+                            </ul>
+                        </div>  
+                        <div class="menu-mobile-tablet">
+                            <span class="menu-mobile-tablet-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                            <ul class="menu-mobile-tablet__list">
+                                <li class="menu-mobile-tablet__list-item">
+                                    <a href="#" class="menu-mobile-tablet__list-item-link">
+                                        Guide
+                                    </a>
+                                </li>
+                                <li class="menu-mobile-tablet__list-item active">
+                                    <a href="#" class="menu-mobile-tablet__list-item-link">
+                                        Host
+                                    </a>
+                                </li>
+                                <li class="menu-mobile-tablet__list-item">
+                                    <a href="#" class="menu-mobile-tablet__list-item-link">
+                                        Sign up
+                                    </a>
+                                </li>
+                             
+                                <li class="menu-mobile-tablet__list-item">
+                                    <a href="#" class="menu-mobile-tablet__list-item-link">
+                                        Sign in
+                                    </a>
+                                </li>
+                                <li class="menu-mobile-tablet__list-item dropdown">
+                                    <img src="./assets/img/header/en.svg" class="menu-mobile-tablet-img" alt="" srcset="">
                                     <span class="language-title">VND</span>
                                     <span class="language-dropdown">
                                         <i class="fa-solid fa-caret-down"></i>
                                     </span>
-                                    <div class="popover-language">
-                                        <div class="popover-language-select">
-                                            <div class="language-select-item">
-                                                <img src="./assets/img/header/vi.svg" alt="" class="language-select-item-img">
-                                                <span class="language-select-item-title">Tiếng Việt</span>
-                                            </div>
-                                            <div class="language-select-item">
-                                                <img src="./assets/img/header/en.svg" alt="" class="language-select-item-img">
-                                                <span class="language-select-item-title">English</span>
-                                                <span class="language-select-item-check">
-                                                    <i class="fa-solid fa-check"></i>
-                                                </span>
-                                            </div>
-                                            <div class="language-select-item">
-                                                <img src="./assets/img/header/ko.svg" alt="" class="language-select-item-img">
-                                                <span class="language-select-item-title">Korean</span>
-                                            </div>
-                                        </div>
-                                        <div class="language-select-money">
-                                            <div class="language-select-money-item">
-                                                <b class="language-select-money-unit">VND</b>
-                                                <span class="language-select-money-title">
-                                                    Việt Nam Đồng
-                                                </span>
-                                                <span class="language-select-item-check">
-                                                    <i class="fa-solid fa-check"></i>
-                                                </span>
-                                            </div>
-                                            <div class="language-select-money-item">
-                                                <b class="language-select-money-unit">USD</b>
-                                                <span class="language-select-money-title">
-                                                    United States Dollar
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </li>
-                        </ul>
-                    </div>
-                </header>
+                                </li>
+                                <li class="menu-mobile-tablet__list-item-close">
+                                    <span class="mobile-tablet-close-menu">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                
+                            </div>
+                        </div> 
+                    </header>
+                <!-- </div> -->
             </div>
         </div>
         <div class="wrapper__container">
@@ -204,7 +251,7 @@
                     <p class="palace-desc">"See the world: It's more fantastic than any dream made or paid for in factories" - Ray Bradbury</p>
                     <div class="palace__list">
                         <div class="row">
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace1.png" alt="" class="palace__list-item-img">
@@ -219,7 +266,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace2.png" alt="" class="palace__list-item-img">
@@ -234,7 +281,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace3.png" alt="" class="palace__list-item-img">
@@ -249,7 +296,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace4.png" alt="" class="palace__list-item-img">
@@ -264,7 +311,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace5.jpg" alt="" class="palace__list-item-img">
@@ -279,7 +326,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace6.png" alt="" class="palace__list-item-img">
@@ -294,7 +341,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace2.png" alt="" class="palace__list-item-img">
@@ -309,7 +356,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4">
                                 <div class="palace__list-item">
                                     <a href="#" class="palace__list-item-link">
                                         <img src="./assets/img/palace/palace3.png" alt="" class="palace__list-item-img">
@@ -575,7 +622,7 @@
                 </div>
                 <div class="introduce">
                     <div class="row">
-                        <div class="col l-6">
+                        <div class="col l-6 m-12">
                             <div class="introduce-left" data-aos="fade-right"
                             data-aos-offset="500"
                             data-aos-easing="ease-in-sine">
@@ -595,25 +642,25 @@
                                 </p>
                                 <div class="introduce-left-action" >
                                     <div class="row">
-                                        <div class="col l-6">
+                                        <div class="col l-6 m-0 c-0">
                                             <div class="introduce-left-action-qr">
                                                 <img src="./assets/img/app/qr-code.png" class="introduce-left-action-qr-img" alt="">
                                             </div>
                                         </div>
-                                        <div class="col l-6">
+                                        <div class="col l-6 m-12 c-12">
                                             <div class="introduce-left-action-app">
                                                 <div class="row">
-                                                    <div class="col l-6">
+                                                    <div class="col l-6 m-6 c-12">
                                                         <div class="action-app-download">
                                                             <img src="./assets/img/app/apple-store.svg" class="action-app-download-img" alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="col l-6">
+                                                    <div class="col l-6 m-6 c-12">
                                                         <div class="action-app-download">
                                                             <img src="./assets/img/app/huawei.svg" class="action-app-download-img alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="col l-6">
+                                                    <div class="col l-6 m-6 c-12">
                                                         <div class="action-app-download">
                                                             <img src="./assets/img/app/google-play.svg" class="action-app-download-img alt="">
                                                         </div>
@@ -625,7 +672,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12">
                             <div class="introduce-right" data-aos="fade-left"
                             data-aos-offset="500"
                             data-aos-easing="ease-in-sine">
@@ -641,7 +688,7 @@
                 data-aos-duration="3000">
                     <div class="grid wide">
                         <div class="row">
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-6 c-12">
                                 <div class="footer__top-item">
                                     <div class="footer__top-item-logo">
                                         <svg version="1.1" viewBox="0 0 244 50" class="mb--18 mb--sm-42 app-introduce__logo svg-icon svg-fill">
@@ -780,7 +827,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-6 c-0">
                                 <div class="footer__top-item">
                                     <h3 class="footer__top-item-title">
                                         EXPLORE DESTINATIONS
@@ -839,7 +886,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4 c-0">
                                 <div class="footer__top-item">
                                     <h3 class="footer__top-item-title">
                                         EXPLORE IN YOUR WAY
@@ -873,7 +920,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4 c-0">
                                 <div class="footer__top-item">
                                     <h3 class="footer__top-item-title">
                                         CONTACT
@@ -922,14 +969,14 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4 c-0">
                                 <div class="footer__top-item">
                                     <h3 class="footer__top-item-title">
                                         TẢI ỨNG DỤNG LUXSTAY
                                     </h3>
                                     <div class="footer__top-item-action">
                                         <div class="row">
-                                            <div class="col l-6">
+                                            <div class="col l-6 hide-on-mobile-tablet">
                                                 <div class="footer__top-item-action-qr">
                                                     <img src="./assets/img/app/qr-code.png" class="introduce-left-action-qr-img" alt="">
                                                 </div>
@@ -966,8 +1013,8 @@
                 data-aos-duration="3000">
                     <div class="grid wide">
                         <div class="row">
-                            <div class="col l-2-4"></div>
-                            <div class="col l-4-4">
+                            <div class="col l-2-4 m-0 c-0"></div>
+                            <div class="col l-4-4 m-4 c-12">
                                 <div class="footer__top-item">
                                     <h3 class="footer__top-item-title">
                                         Secure Your Transaction
@@ -985,7 +1032,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4 c-12">
                                 <div class="footer__top-item">
                                     <h3 class="footer__top-item-title">
                                         Certification
@@ -1004,7 +1051,7 @@
                                      </ul>
                                 </div>
                             </div>
-                            <div class="col l-2-4">
+                            <div class="col l-2-4 m-4 c-12">
                                 <div class="footer__top-item">
                                     <h3 class="footer__top-item-title">
                                         FOLLOW US
@@ -1090,7 +1137,22 @@
         autoplaySpeed: 2000,
         prevArrow: '<button class="slick-prev"><i class="fa-solid fa-angle-left"></i></button> ',
         nextArrow: '<button class="slick-next"><i class="fa-solid fa-angle-right"></i></button> ',
-        });
+        responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],});
         $('.promotion__list .row').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -1098,7 +1160,22 @@
         autoplaySpeed: 2000,
         prevArrow: '<button class="slick-prev"><i class="fa-solid fa-angle-left"></i></button> ',
         nextArrow: '<button class="slick-next"><i class="fa-solid fa-angle-right"></i></button> ',
-        });
+        responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],});
         $('.destination__list .row').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -1106,7 +1183,22 @@
         autoplaySpeed: 2000,
         prevArrow: '<button class="slick-prev"><i class="fa-solid fa-angle-left"></i></button> ',
         nextArrow: '<button class="slick-next"><i class="fa-solid fa-angle-right"></i></button> ',
-        });
+        responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],});
         $('.container__payment-list .row').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -1114,7 +1206,22 @@
         autoplaySpeed: 2000,
         prevArrow: '<button class="slick-prev"><i class="fa-solid fa-angle-left"></i></button> ',
         nextArrow: '<button class="slick-next"><i class="fa-solid fa-angle-right"></i></button> ',
-        });
+        responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],});
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">

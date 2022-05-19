@@ -205,6 +205,7 @@
 .header__menu{
     display: flex;
     /* flex: 1; */
+    align-items: center;
 }
 .menu-list{
     display: flex;
@@ -370,7 +371,7 @@
     display: none;
 }
 .slide{
-    width: 33.3333%;
+    width: 33.33333%;
     transition: 2s;
 }
 .slide-image{
@@ -405,10 +406,10 @@
     margin-left: 0;
 }
 #radio2:checked ~ .first{
-    margin-left: -33.3333%;
+    margin-left: -33.33333%;
 }
 #radio3:checked ~ .first{
-    margin-left: -66.6666%;
+    margin-left: -66.66666%;
 }
 .slide-auto{
     position: absolute;
@@ -771,4 +772,10 @@
 }
 .footer__bottom-about{
     padding: 8px 15px;
+}
+
+
+/* mobile */
+.menu-mobile-tablet{
+    display:none;
 }
